@@ -1,0 +1,19 @@
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" type="text/css" href={{url_for('static',filename='button.css')}}>
+</head>
+
+<body>	
+  <pre>
+    Song Title    : {{ song_title }}
+    
+    No of Pages : {{ pages }}
+  </pre>
+<div>
+  <form action="./finished" method="POST">
+    <input type="submit" class="button" name="download_or_crawl" value="Download PDF"/>
+    <input type="submit" class="button gray" class="gray" name="download_or_crawl" value="Crawl with Another Link"/>
+  </form>
+</div>
+
+</body>

@@ -1,0 +1,5 @@
+flask
+PyPDF2
+pillow
+fpdf
+lxml
